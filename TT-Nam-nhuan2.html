@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra năm nhuận</title>
+</head>
+
+<body>
+    <script>
+        let nam = parseInt(prompt("Nhập năm"));
+        let namnhuan = false;
+        if (nam % 4 == 0) 
+        {
+            if (nam % 100 == 0) 
+            {
+                if (nam % 400 == 0) 
+                {
+                    namnhuan = true;
+                }
+            } 
+            else 
+            {
+                namnhuan = true;
+            }
+        }
+        if (namnhuan) alert('Năm ' + nam + ' là năm nhuận');
+        else alert('Năm ' + nam + ' không phải là năm nhuận');
+</script>
+</body>
+
+</html>
