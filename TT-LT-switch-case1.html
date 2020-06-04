@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện tập với cấu trúc switch-case 1</title>
+</head>
+
+<body>
+    <script>
+        let trinhduyet = prompt('Hãy nhập loại trình duyệt của bạn?');
+        switch (trinhduyet) {
+            case 'Edge':
+                alert('Tuyệt vời!');
+                break;
+            case 'Chrome':
+            case 'Firefox':
+            case 'Safari':
+            case 'Opera':
+                alert('Ok vẫn hoạt động ổn');
+                break;
+            default:
+                alert('Mong nó vẫn hoạt động được');
+        }
+    </script>
+</body>
+
+</html>
